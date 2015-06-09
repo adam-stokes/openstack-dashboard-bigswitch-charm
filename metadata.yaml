@@ -1,11 +1,11 @@
 name: openstack-dashboard-bigswitch
-summary: <Fill in summary here>
-maintainer: adam stokes <adam.stokes@bigboi>
+summary: Bigswitch patch to Horizon
+maintainer: Adam Stokes <adam.stokes@canonical.com>
 description: |
-  <Multi-line description here>
+  Bigswitch patch to Horizon
 categories:
   - misc
-subordinate: false
+subordinate: true
 provides:
   provides-relation:
     interface: interface-name

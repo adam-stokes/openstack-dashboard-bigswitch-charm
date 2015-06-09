@@ -1,14 +1,29 @@
 options:
-  string-option:
+  bcf_controller_ip:
     type: string
-    default: "Default Value"
-    description: "A short description of the configuration option"
-  boolean-option:
+    default: ""
+    description: "BCF Controller IP"
+  bcf_controller_port:
+    type: int
+    default: 8000
+    description: "BCF Controller Port"
+  bcf_controller_username:
+    type: string
+    default: ""
+    description: "BCF Controller username"
+  bcf_controller_password:
+    type: string
+    default: ""
+    description: "BCF Controller password"
+  ssh_username:
+    type: string
+    default: "ubuntu"
+    description: "SSH Username for remote nodes"
+  ssh_password:
+    type: string
+    default: ""
+    description: "SSH Password for remote nodes"
+  debug:
     type: boolean
     default: False
-    description: "A short description of the configuration option"
-  int-option:
-    type: int
-    default: 9001
-    description: "A short description of the configuration option"
-
+    description: "Output extended logging information"
