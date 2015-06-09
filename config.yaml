@@ -27,3 +27,19 @@ options:
     type: boolean
     default: False
     description: "Output extended logging information"
+  network_vlan_ranges:
+    type: string
+    default: "physnet1:100:3000"
+    description: "Comma separated list of physical network vlans"
+  phy_int_bridge:
+    type: string
+    default: "physnet1:br-eth0"
+    description: "OVS bridge that will contain the bond interface"
+  bridge_mappings:
+    type: string
+    default: "physnet1:br-eth0"
+    description: "Mappings between physical networks and ovs bridges"
+  bond_interfaces:
+    type: string
+    default: "eth1,eth2"
+    description: "Comma separated list of interfaces to configure"

@@ -7,11 +7,13 @@ categories:
   - misc
 subordinate: true
 provides:
-  provides-relation:
-    interface: interface-name
+  nrpe-external-master:
+    interface: nrpe-external-master
+    scope: container
 requires:
-  requires-relation:
-    interface: interface-name
-peers:
-  peer-relation:
-    interface: interface-name
+  juju-info:
+    interface: juju-info
+    scope: container
+  plugin:
+    interface: horizon-plugin
+    scope: container

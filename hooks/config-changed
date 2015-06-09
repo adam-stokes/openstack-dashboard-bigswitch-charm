@@ -1,2 +1,7 @@
 #!/bin/bash
 # config-changed occurs everytime a new configuration value is updated (juju set)
+source ./common.sh
+
+python ../scripts/big_patch.py --network-vlan-ranges $NETWORK_VLAN_RANGES \
+  --phy-int-bridge $PHY_INT_BRIDGE --bridge-mappings $BRIDGE_MAPPINGS \
+  --bond-interfaces $BOND_INTERFACES
